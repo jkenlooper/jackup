@@ -1,0 +1,55 @@
+body {
+  margin: 40px;
+  border: 1px dotted blue;
+}
+p {
+  margin: 8px;
+  padding: 0;
+}
+h2 {
+  font-size: 16px;
+}
+
+.wrapper {
+  clear: both;
+  overflow: hidden;
+}
+.wrapper .Main {
+  float: left;
+  width: 30%;
+}
+.Main {
+  padding: 14px;
+  background-color: #eee;
+  margin: 20px;
+}
+.paragraph-wrapper-div {
+  padding: 5px;
+  background-color: #0ee;
+  margin: 10px;
+}
+
+.ContentWithSidebar {
+  border: 1px solid black;
+  clear: both;
+  overflow: hidden;
+  padding: 20px;
+}
+  .ContentWithSidebar-wrapper {
+    float: left;
+    width: 100%;
+  }
+    .ContentWithSidebar-content {
+      margin-right: 60px;
+      background-color: #bbb;
+      height: 100px;
+      padding: 20px;
+    }
+  .ContentWithSidebar-sidebar {
+    float: left;
+    margin-left: -100px;
+    background-color: #ddd;
+    height: 100px;
+    padding: 20px;
+    width: 60px;
+  }
