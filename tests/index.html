@@ -8,23 +8,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" href="site.css">
-        <link rel="stylesheet" href="jackup.css">
+        <link rel="stylesheet" href="../jackup.css">
 
     </head>
     <body>
 
       <div class="wrapper">
-        <div class="Main" jackup="1" >
+        <div class="Main" >
+          <div class="paragraph-wrapper-div">
+            <p>A paragraph to test.    exciting.</p>
+          </div>
+        </div>
+        <div class="Main" jackup="" >
           <div class="paragraph-wrapper-div" jackup="red">
             <p>A paragraph to test.    exciting.</p>
           </div>
         </div>
-        <div class="Main" jackup="1" >
-          <div class="paragraph-wrapper-div" jackup="red">
-            <p>A paragraph to test.    exciting.</p>
-          </div>
-        </div>
-        <div class="Main" jackup="1" >
+        <div class="Main" jackup="" >
           <div class="paragraph-wrapper-div" jackup="red">
             <p>A second paragraph to test.    exciting.</p>
           </div>
@@ -32,13 +32,13 @@
       </div>
 
       <div class="wrapper">
-        <div class="Main">
+        <div class="Main" jackup="vline">
           <div class="paragraph-wrapper-div">
             <p>A paragraph to test.    exciting.</p>
           </div>
         </div>
         <div class="Main">
-          <div class="paragraph-wrapper-div">
+          <div class="paragraph-wrapper-div" jackup="hline">
             <p>A paragraph to test.    exciting.</p>
           </div>
         </div>
@@ -63,11 +63,17 @@
           sidebar
           </h2>
           <ul>
-            <li jackup="blue">
+            <li class="one" jackup="1 blue">
               one
             </li>
-            <li jackup="blue">
+            <li class="two" jackup="2 blue">
               two
+            </li>
+            <li class="three" jackup="vline">
+              three
+            </li>
+            <li class="four" jackup="hline">
+              four
             </li>
           </ul>
         </div>

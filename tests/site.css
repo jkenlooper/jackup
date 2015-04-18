@@ -9,6 +9,22 @@ p {
 h2 {
   font-size: 16px;
 }
+li {
+  margin: 0;
+  padding: 5px;
+}
+li + li {
+  margin-left: 10px;
+}
+li + li + li {
+  margin-left: 20px;
+}
+li + li + li + li {
+  margin-left: 30px;
+}
+li + li + li + li + li {
+  margin-left: 40px;
+}
 
 .wrapper {
   clear: both;
@@ -30,26 +46,23 @@ h2 {
 }
 
 .ContentWithSidebar {
-  border: 1px solid black;
   clear: both;
   overflow: hidden;
-  padding: 20px;
 }
   .ContentWithSidebar-wrapper {
     float: left;
     width: 100%;
   }
     .ContentWithSidebar-content {
-      margin-right: 60px;
+      margin-right: 260px;
       background-color: #bbb;
       height: 100px;
       padding: 20px;
     }
   .ContentWithSidebar-sidebar {
     float: left;
-    margin-left: -100px;
+    margin-left: -300px;
     background-color: #ddd;
-    height: 100px;
     padding: 20px;
-    width: 60px;
+    width: 260px;
   }

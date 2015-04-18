@@ -4,7 +4,7 @@
   outline-offset: 10px;
   */
 }
-[jackup]:before {
+[jackup]::before {
   font-family: monospace;
   content: attr(class);
   position: absolute;
@@ -20,35 +20,76 @@
   line-height: 10px;
   text-align: left;
 }
-[jackup]:after {
+[jackup]::after {
+  display: block;
+  content: "";
+  height: 0;
+  width: 0;
+  outline: 1px dotted gray;
+  position: static;
+  float: right;
+  width: 100%;
+}
+
+[jackup~='vline'] {
+  /* Show a vertical line going to the
+   * top
+   */
+}
+[jackup~='vline']::after {
   border-left: 1px solid gray;
   position: absolute;
-  display: block;
   margin-top: -100%;
   height: 100%;
-  content: "";
   opacity: 0.4;
+
+  float: none;
+  width: auto;
+  outline: none;
+}
+
+[jackup~='hline']::after {
+  border-top: 1px solid gray;
+  position: absolute;
+  margin-left: -100%;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+
+  float: none;
+  height: auto;
+  outline: none;
 }
 
 [jackup~='red'] {
   outline-color: red;
 }
-[jackup~='red']:before,
-[jackup~='red']:after {
+[jackup~='red']::before,
+[jackup~='red']::after {
   border-color: red;
   color: red;
+}
+[jackup~='red']::after {
+  outline: 1px dotted red;
 }
 
 [jackup~='blue'] {
   outline-color: blue;
 }
-[jackup~='blue']:before,
-[jackup~='blue']:after {
+[jackup~='blue']::before,
+[jackup~='blue']::after {
   border-color: blue;
   color: blue;
 }
+[jackup~='blue']::after {
+  outline: 1px dotted blue;
+}
 
-[jackup~='1']:before {
+[jackup~='1']::before {
   margin-top: -32px;
   height: 30px;
+}
+[jackup~='2']::before {
+  margin-top: -42px;
+  height: 40px;
 }
