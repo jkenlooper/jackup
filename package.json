@@ -1,0 +1,20 @@
+{
+  "name": "jackup",
+  "version": "0.0.0",
+  "description": "Jack Up CSS",
+  "main": "jackup.css",
+  "style": "jackup.css",
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jkenlooper/jackup.git"
+  },
+  "author": "Jake Hickenlooper <jake@weboftomorrow.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jkenlooper/jackup/issues"
+  },
+  "homepage": "https://github.com/jkenlooper/jackup#readme"
+}

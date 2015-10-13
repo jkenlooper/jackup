@@ -1,0 +1,15 @@
+{
+  "name": "jackup",
+  "homepage": "https://github.com/jkenlooper/jackup",
+  "authors": [
+    "Jake Hickenlooper <jake@weboftomorrow.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
