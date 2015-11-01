@@ -1,5 +1,4 @@
-Jack Up CSS
-===========
+# Jack Up CSS
 
 Simple stylesheet to add when still developing a website's CSS.  It basically
 adds an outline and label to the top left corners of elements having the
