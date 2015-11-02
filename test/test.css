@@ -1,7 +1,21 @@
+@import "normalize.css";
+@import "../index.css";
+
+@import "suitcss-components-test";
+
 body {
-  margin: 40px;
-  border: 1px dotted blue;
+  margin: 10px;
 }
+
+.testdiv {
+  background-color: #ddd;
+  width: 40px;
+  height: 40px;
+}
+.testdiv--no-padding-margin {
+}
+
+/*
 p {
   margin: 8px;
   padding: 0;
@@ -66,3 +80,4 @@ li + li + li + li + li {
     padding: 20px;
     width: 260px;
   }
+  */

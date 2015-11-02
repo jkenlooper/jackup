@@ -1,7 +1,6 @@
 {
   "input": [
-    "index.css",
-    "test/test.css"
+    "test.css"
   ],
   "use": [
     "postcss-import",
@@ -12,7 +11,7 @@
     "postcss-url",
     "postcss-reporter"
   ],
-  "dir": "dist",
+  "dir": "../dist",
   "postcss-url": {
     "url": "copy"
   }

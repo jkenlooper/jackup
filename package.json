@@ -9,10 +9,12 @@
   ],
   "scripts": {
     "prepublish": "mkdir -p dist && npm run buildcss",
-    "buildcss": "postcss -c postcss.json"
+    "buildcss": "postcss -c postcss.json",
+    "npm-prerequisites": "csssources test/test.css index.css > .npm-prerequisites"
   },
   "devDependencies": {
     "autoprefixer": "^6.0.3",
+    "normalize.css": "^3.0.3",
     "postcss-bem-linter": "^1.1.0",
     "postcss-calc": "^5.0.0",
     "postcss-cli": "^2.1.0",
@@ -20,7 +22,8 @@
     "postcss-custom-properties": "^5.0.0",
     "postcss-import": "^7.0.0",
     "postcss-reporter": "^1.2.1",
-    "postcss-url": "^5.0.0"
+    "postcss-url": "^5.0.0",
+    "suitcss-components-test": "^0.2.1"
   },
   "repository": {
     "type": "git",
