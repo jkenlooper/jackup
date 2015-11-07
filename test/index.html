@@ -17,77 +17,130 @@
           Empty jackup attribute on elements.
         </h1>
         <h2 class="Test-describe">
-          [jackup]
+          [jackup] on element without padding or margin.
         </h2>
         <div class="Test-run">
           <div class="testdiv testdiv--no-padding-margin" style="width: 40px; height: 40px;" jackup>
           </div>
         </div>
+        <h2 class="Test-describe">
+          [jackup] on element with only padding.
+        </h2>
+        <div class="Test-run">
+
+          <div class="testdiv testdiv--padding" style="width: 40px; height: 40px;" jackup>
+          </div>
+
+        </div>
+
+        <h2 class="Test-describe">
+          [jackup] on element with only margin.
+        </h2>
+        <div class="Test-run">
+
+          <div class="testdiv testdiv--margin" style="width: 40px; height: 40px;" jackup>
+          </div>
+
+        </div>
+
       </div>
 
-      <div class="wrapper">
-        <div class="Main" >
-          <div class="paragraph-wrapper-div">
-            <p>A paragraph to test.    exciting.</p>
+      <div class="Test">
+        <h1 class="Test-title">
+        Vertical line with [jackup~='vline']
+        </h1>
+        <h2 class="Test-describe">
+          Show a vertical line stretching from this element to the top of browser viewport.
+        </h2>
+        <div class="Test-run">
+          <code>Currently broken.</code>
+          <!--
+          <div class="testdiv testdiv--margin" jackup="vline">
+          </div>
+          -->
+        </div>
+      </div>
+
+      <div class="Test">
+        <h1 class="Test-title">
+        Horizontal line with [jackup~='hline']
+        </h1>
+        <h2 class="Test-describe">
+          Show a horizontal line stretching from this element to the left of browser viewport.
+        </h2>
+        <div class="Test-run">
+          <div class="testdiv testdiv--margin" jackup="hline">
           </div>
         </div>
-        <div class="Main" jackup="" >
-          <div class="paragraph-wrapper-div" jackup="red">
-            <p>A paragraph to test.    exciting.</p>
+        <h2 class="Test-describe">
+          Element floated to the right.
+        </h2>
+        <div class="Test-run">
+          <div style="overflow:hidden;">
+          <div class="testdiv testdiv--margin" style="float: right;" jackup="hline">
           </div>
-        </div>
-        <div class="Main" jackup="" >
-          <div class="paragraph-wrapper-div" jackup="red">
-            <p>A second paragraph to test.    exciting.</p>
           </div>
         </div>
       </div>
 
-      <div class="wrapper">
-        <div class="Main" jackup="vline">
-          <div class="paragraph-wrapper-div">
-            <p>A paragraph to test.    exciting.</p>
+      <div class="Test">
+        <h1 class="Test-title">
+        Coloring the lines with [jackup='red']
+        </h1>
+        <h2 class="Test-describe">
+          Set the color for the jackup lines and labels by adding the color to the jackup attribute.
+        </h2>
+        <div class="Test-run">
+          <div class="testspans">
+            <span class="red" jackup="red"> red </span>
+            <span class="blue" jackup="blue"> blue </span>
           </div>
         </div>
-        <div class="Main">
-          <div class="paragraph-wrapper-div" jackup="hline">
-            <p>A paragraph to test.    exciting.</p>
-          </div>
-        </div>
-        <div class="Main">
-          <div class="paragraph-wrapper-div">
-            <p>A second paragraph to test.    exciting.</p>
-          </div>
-        </div>
+        <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/color_value
+					black
+					silver
+					gray
+					white
+					maroon
+					red
+					purple
+					fuchsia
+					green
+					lime
+					olive
+					yellow
+					navy
+					blue
+					teal
+					aqua
+        -->
       </div>
 
-
-      <div jackup class="ContentWithSidebar">
-        <div jackup="1 red" class="ContentWithSidebar-wrapper">
-          <div jackup class="ContentWithSidebar-content">
-            <p jackup="blue">
-            content
-            </p>
+      <div class="Test">
+        <h1 class="Test-title">
+          Offset the labels by adding 1 or 2 to the jackup attribute.
+        </h1>
+        <h2 class="Test-describe">
+          Offsets 0 through 2.
+        </h2>
+        <div class="Test-run">
+          <div class="testspans">
+            <span class="zucchini" jackup="0"> zucchini label offset by 0 (default) </span>
+            <span class="apple" jackup="1"> apple label offset by 1 </span>
+            <span class="blueberry" jackup="2"> blueberry label offset by 2 </span>
           </div>
         </div>
-        <div jackup class="ContentWithSidebar-sidebar">
-          <h2>
-          sidebar
-          </h2>
-          <ul>
-            <li class="one" jackup="1 blue">
-              one
-            </li>
-            <li class="two" jackup="2 blue">
-              two
-            </li>
-            <li class="three" jackup="vline">
-              three
-            </li>
-            <li class="four" jackup="hline">
-              four
-            </li>
-          </ul>
+        <h2 class="Test-describe">
+          Nested elements with offset labels.
+        </h2>
+        <div class="Test-run">
+          <div style="margin: 60px 0 0;">
+          <div class="tree" jackup="2">
+            <div class="apple" jackup="1">
+              <div class="seed" jackup="0"> seed </div>
+            </div>
+          </div>
+          </div>
         </div>
       </div>
 

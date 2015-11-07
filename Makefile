@@ -8,7 +8,7 @@ npmprerequisites := $(shell npm run npm-prerequisites > /dev/null && cat .npm-pr
 all : .npm-target .livereload
 .PHONY : all
 
-.npm-target : $(npmprerequisites)
+.npm-target : $(npmprerequisites) package.json
 	npm install;
 	@touch .npm-target;
 
