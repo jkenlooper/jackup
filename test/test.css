@@ -1,7 +1,6 @@
-@import "normalize.css";
+@import "../vendor/normalize.css/normalize.css";
 @import "../index.css";
-
-@import "suitcss-components-test";
+@import "../vendor/suitcss-components-test/test.css";
 
 body {
   margin: 10px;
