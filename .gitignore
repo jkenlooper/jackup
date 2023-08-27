@@ -1,4 +1,0 @@
-# Not including the vendor directory as this project is considered a library and
-# not an end application. Development will require running the vendor_grab tool
-# to populate the vendor directory.
-/vendor/
